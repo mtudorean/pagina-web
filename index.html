@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Calatorie prin Sistemul Solar</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 
@@ -133,10 +134,29 @@
         </form>
     </section>
 
+    <section id="jurnal">
+        <h2>Jurnal de Observații</h2>
+        <p>Adaugă propriile tale observații astronomice — titlu, descriere — și vor apărea instant mai jos, fără reîncărcarea paginii.</p>
+
+        <form id="jurnal-form">
+            <div class="form-group">
+                <label for="titlu-obs">Titlu Observație</label>
+                <input type="text" id="titlu-obs" name="titlu-obs" placeholder="ex: Eclipsă parțială de Lună" required>
+            </div>
+            <div class="form-group">
+                <label for="descriere-obs">Descriere</label>
+                <input type="text" id="descriere-obs" name="descriere-obs" placeholder="ex: Observată azi-noapte, ora 23:40, vizibilitate excelentă" required>
+            </div>
+            <button type="submit" id="btn-adauga">Adaugă Observația</button>
+        </form>
+
+        <p id="jurnal-gol">Momentan nu ai adăugat nicio observație.</p>
+        <div class="cards-grid" id="jurnal-lista"></div>
+    </section>
+
     <footer>
         <p>&copy; 2026 Cosmos Explorer.</p>
     </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
-
