@@ -312,6 +312,81 @@ section#formular button[type="submit"]:active {
     transform: translateY(0) scale(0.98);
 }
 
+/* Sectiunea Jurnal de Observatii (JS) */
+#jurnal-form button[type="submit"] {
+    background: linear-gradient(135deg, #7C3AED, #4C1D95);
+    color: #FFFFFF;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 0 18px rgba(139, 92, 246, 0.4);
+}
+
+#jurnal-form button[type="submit"]:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.7);
+}
+
+#jurnal-form button[type="submit"]:active {
+    transform: translateY(0) scale(0.98);
+}
+
+#jurnal-gol {
+    color: #64748B;
+    font-style: italic;
+    font-size: 14px;
+}
+
+#jurnal-lista .card {
+    animation: cardApar 0.4s ease;
+}
+
+@keyframes cardApar {
+    from {
+        opacity: 0;
+        transform: translateY(-14px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+#jurnal-lista .card h3 {
+    color: #F1F5F9;
+}
+
+#jurnal-lista .card p {
+    color: #94A3B8;
+    margin-bottom: 12px;
+}
+
+.btn-sterge-card {
+    align-self: flex-start;
+    margin-top: 14px;
+    background: rgba(239, 68, 68, 0.12);
+    color: #FCA5A5;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-sterge-card:hover {
+    background: rgba(239, 68, 68, 0.25);
+    border-color: rgba(239, 68, 68, 0.6);
+}
+
 footer {
     max-width: 1100px;
     margin: 20px auto 0 auto;
