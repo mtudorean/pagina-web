@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calatorie prin Sistemul Solar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cosmos Explorer</h1>
+        <p>O călătorie vizuală prin planetele Sistemului Solar, misiunile spațiale și misterele care ne așteaptă dincolo de Pământ.</p>
+    </header>
+
+    <section id="despre">
+        <h2>Despre Proiect</h2>
+        <p>
+            <strong>Cosmos Explorer</strong> este un ghid interactiv dedicat pasionaților de astronomie.
+            De la nașterea Sistemului Solar acum <strong>4.6 miliarde de ani</strong>, până la cele mai
+            recente misiuni trimise spre Marte și Jupiter, această pagină adună informații esențiale
+            despre planete, distanțe și condițiile care fac exploarea spațială atât de fascinantă.
+        </p>
+        <p>
+            Omenirea a trimis până acum zeci de sonde dincolo de orbita Pământului, iar fiecare
+            misiune ne-a adus mai aproape de răspunsul la o întrebare veche de mii de ani:
+            <em>suntem singuri în univers?</em>
+        </p>
+    </section>
+
+    <section id="galerie">
+        <h2>Galerie Planetară</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpoe9ATNnYYvz284BQaZqOoMpfLYlrHeST1PtuU_YqQw&s=10" alt="Planeta Marte" class="card-img">
+                <h3>Marte</h3>
+                <p>Planeta Roșie, principala țintă pentru viitoarele misiuni cu echipaj uman.</p>
+                
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Jupiter_New_Horizons.jpg" alt="Planeta Jupiter" class="card-img">
+                <h3>Jupiter</h3>
+                <p>Cel mai mare gigant gazos, cu peste 90 de sateliți naturali cunoscuți.</p>
+                
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" alt="Planeta Saturn" class="card-img">
+                <h3>Saturn</h3>
+                <p>Faimoasă pentru inelele sale spectaculoase, vizibile chiar și cu un telescop mic.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="misiuni">
+        <h2>Misiuni Spațiale Notabile</h2>
+        <ul>
+            <li><strong>Apollo 11 (1969):</strong> Primii oameni pe suprafața Lunii.</li>
+            <li><strong>Voyager 1 & 2 (1977):</strong> Sondele care au ieșit din Sistemul Solar.</li>
+            <li><strong>Curiosity Rover (2012):</strong> Explorare activă a solului marțian.</li>
+            <li><strong>Perseverance & Ingenuity (2021):</strong> Rover și elicopter pe Marte.</li>
+            <li><strong>Misiunea Artemis:</strong> Planuri pentru revenirea omului pe Lună.</li>
+        </ul>
+    </section>
+
+    <section id="resurse">
+        <h2> - Resurse Utile</h2>
+        <p>
+            Pentru date actualizate despre misiunile spațiale în desfășurare, vizitează
+            <a href="https://www.nasa.gov" target="_blank">site-ul oficial NASA</a> sau
+            <a href="https://www.esa.int" target="_blank">Agenția Spațială Europeană (ESA)</a>.
+        </p>
+    </section>
+
+    <section id="comparatie">
+        <h2>Comparație Planete</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Planetă</th>
+                        <th>Distanță față de Soare</th>
+                        <th>Diametru</th>
+                        <th>Nr. sateliți</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Marte</td>
+                        <td>227.9 milioane km</td>
+                        <td><span class="power-badge">6.779 km</span></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Jupiter</td>
+                        <td>778.5 milioane km</td>
+                        <td><span class="power-badge">139.820 km</span></td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Saturn</td>
+                        <td>1.434 miliarde km</td>
+                        <td><span class="power-badge">116.460 km</span></td>
+                        <td>146</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="formular">
+        <h2>Înscrie-te la Alertele de Misiune</h2>
+        <p>Primește notificări despre lansări, eclipse și evenimente astronomice importante.</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nume">Nume și Prenume</label>
+                <input type="text" id="nume" name="nume" placeholder="Introdu numele tău" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresă de Email</label>
+                <input type="email" id="email" name="email" placeholder="nume@exemplu.com" required>
+            </div>
+            <div class="form-group">
+                <label for="interes">Interes Principal</label>
+                <select id="interes" name="interes">
+                    <option value="marte">Misiuni pe Marte</option>
+                    <option value="luna">Programul Artemis (Luna)</option>
+                    <option value="telescop">Astronomie & Telescoape</option>
+                    <option value="general">Noutăți generale spațiale</option>
+                </select>
+            </div>
+            <button type="submit">Trimite Înscrierea</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cosmos Explorer.</p>
+    </footer>
+
+</body>
+</html>
 
